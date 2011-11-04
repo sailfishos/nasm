@@ -1,9 +1,0 @@
-<package project="Mer:Trunk:Base" name="nasm">
-  <title>A portable x86 assembler which uses Intel-like syntax</title>
-  <description>NASM is the Netwide Assembler, a free portable assembler for the Intel
-80x86 microprocessor series, using primarily the traditional Intel
-instruction mnemonics and syntax.
-
-</description>
-  <url>http://nasm.sourceforge.net/</url>
-</package>
