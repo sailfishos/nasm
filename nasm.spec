@@ -2,28 +2,26 @@
 # -*- coding: utf-8 -*-
 Summary: A portable x86 assembler which uses Intel-like syntax
 Name: nasm
-Version: 2.09.10
+Version: 2.10.07
 Release: 1
 License: simplified BSD license
 Group: Development/Languages
 URL: http://nasm.sourceforge.net/
-Source0: nasm-%{version}.tar.bz2
-Source1: nasm-%{version}-xdoc.tar.bz2
+Source0: http://www.nasm.us/pub/nasm/releasebuilds/%{version}/nasm-%{version}.tar.xz
+Source1: http://www.nasm.us/pub/nasm/releasebuilds/%{version}/nasm-%{version}-xdoc.tar.xz
 Source2: nasm.sh
 BuildRequires: perl
-BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
 Requires(post): /sbin/install-info
 Requires(preun): /sbin/install-info
-
-
-%package rdoff
-Summary: Tools for the RDOFF binary format, sometimes used with NASM
-Group: Development/Tools
 
 %description
 NASM is the Netwide Assembler, a free portable assembler for the Intel
 80x86 microprocessor series, using primarily the traditional Intel
 instruction mnemonics and syntax.
+
+%package rdoff
+Summary: Tools for the RDOFF binary format, sometimes used with NASM
+Group: Development/Tools
 
 %description rdoff
 Tools for the operating-system independent RDOFF binary format, which
@@ -32,12 +30,11 @@ include linker, library manager, loader, and information dump.
 
 %prep
 %setup -q
-tar xjf %{SOURCE1} --strip-components 1
+xz -dc %{SOURCE1} | tar -x --strip-components 1
 
 %build
 %configure
 make all
-#gzip -9f doc/nasmdoc.{ps,txt}
 
 %install
 rm -rf $RPM_BUILD_ROOT
@@ -48,9 +45,6 @@ install -d $RPM_BUILD_ROOT/%{_infodir}
 install -m 644 -t $RPM_BUILD_ROOT/%{_infodir} doc/info/*
 install -d $RPM_BUILD_ROOT/etc/profile.d
 cp %{SOURCE2} $RPM_BUILD_ROOT/etc/profile.d/ 
-
-%clean
-rm -rf ${RPM_BUILD_ROOT}
 
 %post
 [ -e %{_infodir}/nasm.info.gz ] && /sbin/install-info %{_infodir}/nasm.info.gz  %{_infodir}/dir || :
@@ -67,8 +61,7 @@ fi
 %{_bindir}/ndisasm
 %doc %{_mandir}/*/*
 %doc %{_infodir}/nasm.info*.gz
-/etc/profile.d/nasm.sh
-
+%{_sysconfdir}/profile.d/nasm.sh
 
 %files rdoff
 %defattr(-,root,root)
