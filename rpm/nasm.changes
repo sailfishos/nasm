@@ -13,23 +13,23 @@
 * Sat Apr 10 2010 Anas Nashif <anas.nashif@intel.com> - 2.08rc7
 - Fixed rpmlint errors
 
-* Tue Feb 9 2010 Arjan van de Ven <arjan@linux.intel.com> 2.08rc5
+* Tue Feb 9 2010 Arjan van de Ven <arjan@linux.intel.com> - 2.08rc5
 - add nasm env variable script
 
-* Mon Feb 08 2010 Austin Zhang <austin.zhang@intel.com> 2.08rc7
+* Mon Feb 08 2010 Austin Zhang <austin.zhang@intel.com> - 2.08rc7
 - Update to 2.08rc7
 
-* Tue Nov 3 2009 Austin Zhang <austin.zhang@intel.com> 2.08rc5
+* Tue Nov 3 2009 Austin Zhang <austin.zhang@intel.com> - 2.08rc5
 - Update to 2.08rc5
 
 * Wed Sep 09 2009 Passion Zhao <passion.zhao@intel.com> - 2.0.7-1
 - Update to 2.0.7 to address CVE-2008-7177
 - Remove upstreamed patch: nasm-CVE-2008-2719.patch
 
-* Thu Jan 22 2009 Passion Zhao <passion.zhao@intel.com> 2.01-2
+* Thu Jan 22 2009 Passion Zhao <passion.zhao@intel.com> - 2.01-2
 - Fix CVE-2008-2719
 
-* Thu Sep 18 2008 Austin Zhang <austin.zhang@intel.com> 2.01
+* Thu Sep 18 2008 Austin Zhang <austin.zhang@intel.com> - 2.01
 - add check for the info file before installation
 
 * Tue Feb 19 2008 Fedora Release Engineering <rel-eng@fedoraproject.org> - 2.01-2
@@ -56,97 +56,97 @@
 * Tue Feb 07 2006 Jesse Keating <jkeating@redhat.com> - 0.98.39-3.2
 - rebuilt for new gcc4.1 snapshot and glibc changes
 
-* Fri Dec 09 2005 Jesse Keating <jkeating@redhat.com>
+* Fri Dec 09 2005 Jesse Keating <jkeating@redhat.com> - 0.98.39-3.1
 - rebuilt
 
 * Mon Apr  4 2005 Jeremy Katz <katzj@redhat.com> - 0.98.39-3
 - pdf docs are duplication of html, txt and postscript
 
-* Fri Apr 01 2005 Jindrich Novy <jnovy@redhat.com> 0.98.39-2
+* Fri Apr 01 2005 Jindrich Novy <jnovy@redhat.com> - 0.98.39-2
 - fix yet another vsprintf buffer overflow (#152963)
 
-* Thu Mar 31 2005 Jindrich Novy <jnovy@redhat.com> 0.98.39-1
+* Thu Mar 31 2005 Jindrich Novy <jnovy@redhat.com> - 0.98.39-1
 - update to 0.98.39
 - add BuildRequires ghostscript, texinfo to doc subpackage (#110584)
 - generate also PDF documentation for nasm (#88431)
 - new release fixes CAN-2004-1287 (#143052)
 
-* Tue Jun 15 2004 Elliot Lee <sopwith@redhat.com>
+* Tue Jun 15 2004 Elliot Lee <sopwith@redhat.com> - 0.98.38-3
 - rebuilt
 
-* Fri Feb 13 2004 Elliot Lee <sopwith@redhat.com>
+* Fri Feb 13 2004 Elliot Lee <sopwith@redhat.com> - 0.98.38-2
 - rebuilt
 
-* Fri Sep 26 2003 Florian La Roche <Florian.LaRoche@redhat.de>
+* Fri Sep 26 2003 Florian La Roche <Florian.LaRoche@redhat.de> - 0.98.38
 - update to 0.98.38 and specfile cleanup
 
-* Wed Jun 04 2003 Elliot Lee <sopwith@redhat.com>
+* Wed Jun 04 2003 Elliot Lee <sopwith@redhat.com> - 0.98.37
 - rebuilt
 
-* Wed Jan 22 2003 Tim Powers <timp@redhat.com>
+* Wed Jan 22 2003 Tim Powers <timp@redhat.com> - 0.98.36
 - rebuilt
 
-* Tue Dec 17 2002 Phil Knirsch <pknirsch@redhat.com> 0.98.35-2
+* Tue Dec 17 2002 Phil Knirsch <pknirsch@redhat.com> - 0.98.35-2
 - Removed ExclusiveArch tag.
 - Fixed typo in homepage URL.
 
-* Wed Dec 11 2002 Thomas Woerner <twoerner@redhat.com> 0.98.35-1
+* Wed Dec 11 2002 Thomas Woerner <twoerner@redhat.com> - 0.98.35-1
 - new version 0.98.35
 - nasm has new homepage (#77323)
 
-* Fri Nov 29 2002 Tim Powers <timp@redhat.com> 0.98.34-2
+* Fri Nov 29 2002 Tim Powers <timp@redhat.com> - 0.98.34-2
 - fix %%doc list
 - remove unpackaged files from the buildroot
 
-* Mon Sep 16 2002 Jeremy Katz <katzj@redhat.com> 0.98.34-1hammer
+* Mon Sep 16 2002 Jeremy Katz <katzj@redhat.com> - 0.98.34-1hammer
 - add x86_64 to ExclusiveArch list
 
-* Tue Jul 23 2002 Trond Eivind Glomsrød <teg@redhat.com> 0.98.34-1
+* Tue Jul 23 2002 Trond Eivind Glomsrød <teg@redhat.com> - 0.98.34-1
 - 0.98.34
 
-* Fri Jun 21 2002 Tim Powers <timp@redhat.com>
+* Fri Jun 21 2002 Tim Powers <timp@redhat.com> - 0.98.32-3
 - automated rebuild
 
-* Sun May 26 2002 Tim Powers <timp@redhat.com>
+* Sun May 26 2002 Tim Powers <timp@redhat.com> - 0.98.32-2
 - automated rebuild
 
-* Tue May 21 2002 Trond Eivind Glomsrød <teg@redhat.com> 0.98.32-1
+* Tue May 21 2002 Trond Eivind Glomsrød <teg@redhat.com> - 0.98.32-1
 - 0.98.32
 - Various doc files have changed names/been removed/added
 - New download location (after the license change, it's at sourceforge)
 - The new version is LGPL
 - Only build on x86 (#65255)
 
-* Tue Feb 26 2002 Trond Eivind Glomsrød <teg@redhat.com> 0.98.22-2
+* Tue Feb 26 2002 Trond Eivind Glomsrød <teg@redhat.com> - 0.98.22-2
 - Rebuild
 
-* Mon Jan 21 2002 Bernhard Rosenkraenzer <bero@redhat.com>
+* Mon Jan 21 2002 Bernhard Rosenkraenzer <bero@redhat.com> - 0.98.22-1
 - Update to 0.98.22 to fix bogus code generation in SDL
 - Fix spec file, handle RPM_OPT_FLAGS
 
-* Wed Jan 09 2002 Tim Powers <timp@redhat.com>
+* Wed Jan 09 2002 Tim Powers <timp@redhat.com> - 0.98.21
 - automated rebuild
 
-* Tue Aug  7 2001 Trond Eivind Glomsrød <teg@redhat.com>
+* Tue Aug  7 2001 Trond Eivind Glomsrød <teg@redhat.com> - 0.98.20
 - Updated patch from H.J. Lu for bogus elf generation (#45986,
   verified by reporter) 
 
-* Thu Apr 26 2001 Trond Eivind Glomsrød <teg@redhat.com>
+* Thu Apr 26 2001 Trond Eivind Glomsrød <teg@redhat.com> - 0.98.19
 - Updated patch for bogus elf generation from hjl@gnu.org
 
-* Tue Feb 13 2001 Trond Eivind Glomsrød <teg@redhat.com>
+* Tue Feb 13 2001 Trond Eivind Glomsrød <teg@redhat.com> - 0.98.18
 - Add patch from H.J. Lu to avoid creating bogus elf objects (#27489)
 
-* Wed Jul 12 2000 Prospector <bugzilla@redhat.com>
+* Wed Jul 12 2000 Prospector <bugzilla@redhat.com> - 0.98.17
 - automatic rebuild
 
-* Tue Jun 13 2000 Trond Eivind Glomsrød <teg@redhat.com>
+* Tue Jun 13 2000 Trond Eivind Glomsrød <teg@redhat.com> - 0.98.16
 - rewrote almost everything. The old specfile was bad, bad, bad.
   Really Bad.
 
-* Tue Apr 04 2000 Erik Troan <ewt@redhat.com>
+* Tue Apr 04 2000 Erik Troan <ewt@redhat.com> - 0.98.15
 - moved to distribution (syslinux needs it)
 - gzipped man pages
 
-* Thu Dec 02 1999 Preston Brown <pbrown@redhat.com>
+* Thu Dec 02 1999 Preston Brown <pbrown@redhat.com> - 0.98.14
 - adopted from one of the best .spec files I have seen in a long time. :)
