@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 Summary: A portable x86 assembler which uses Intel-like syntax
 Name: nasm
-Version: 2.16.03
+Version: 3.02
 Release: 1
 License: BSD
 URL: http://www.nasm.us
